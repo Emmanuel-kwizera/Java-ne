@@ -111,33 +111,41 @@
             </li>
             <li class="table-row">
                 <div class="col col-1">1</div>
-                <div class="col col-2">Instagram</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:13</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:15</div>
+                <div class="col col-2">Instagram.com</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
                 <div class="col col-2">2min 56sec</div>
                 <div class="col col-1">100</div>
             </li>
             <li class="table-row">
                 <div class="col col-1">2</div>
-                <div class="col col-2">Facebook</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:18</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:21</div>
+                <div class="col col-2">Facebook.com</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
                 <div class="col col-2">2min 56sec</div>
                 <div class="col col-1">150</div>
             </li>
             <li class="table-row">
                 <div class="col col-1">3</div>
-                <div class="col col-2">Amazon</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:23</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:25</div>
+                <div class="col col-2">Amazon.com</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
                 <div class="col col-2">2min 56sec</div>
                 <div class="col col-1">230</div>
             </li>
             <li class="table-row">
                 <div class="col col-1">4</div>
-                <div class="col col-2">Netflix</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:28</div>
-                <div class="col col-2">Mon, 11 Jul 22 08:30</div>
+                <div class="col col-2">Netflix.com</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
+                <div class="col col-2">2min 56sec</div>
+                <div class="col col-1">400</div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1">4</div>
+                <div class="col col-2">https://www.minict.gov.rw/</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
+                <div class="col col-2">Mon, 11 Jul 22</div>
                 <div class="col col-2">2min 56sec</div>
                 <div class="col col-1">400</div>
             </li>
