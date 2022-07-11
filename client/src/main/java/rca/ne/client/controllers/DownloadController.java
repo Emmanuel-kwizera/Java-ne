@@ -4,16 +4,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+
+import java.io.*;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 
 import rca.ne.client.dtos.CreateOrUpdateLinkDTO;
-
-import java.io.File;
 
 @Controller
 @RequestMapping("/")
@@ -38,7 +40,7 @@ public class DownloadController {
     }
 
     @PostMapping("/download")
-    public String download(String url){
+    public String download(String url) throws MalformedURLException {
 //        String urlGetter = "https://www.baeldung.com/domain";
         CreateOrUpdateLinkDTO dto = new CreateOrUpdateLinkDTO(url);
         String urlGetter = dto.getUrl();
@@ -49,6 +51,20 @@ public class DownloadController {
         File theDir = new File(path);
         if (!theDir.exists()){
             theDir.mkdirs();
+        }
+        URL downloadUrl = new URL(url);
+        String pageWriterPath = path + "/index.html";
+        try(
+                BufferedReader reader = new BufferedReader(new InputStreamReader(downloadUrl.openStream()));
+                BufferedWriter writer = new BufferedWriter(new FileWriter(pageWriterPath));
+        ) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                writer.write(line);
+            }
+            System.out.println("Page downloaded.");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
         return "redirect:/All-WebSites";
