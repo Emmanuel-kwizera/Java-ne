@@ -42,7 +42,7 @@ public class DownloadController {
 //        String urlGetter = "https://www.baeldung.com/domain";
         CreateOrUpdateLinkDTO dto = new CreateOrUpdateLinkDTO(url);
         String urlGetter = dto.getUrl();
-        String domainName =  urlGetter.replaceAll("http(s)?://|www\\.|.com/.*", "");
+        String domainName =  urlGetter.replaceAll("http(s)?://|www\\.|/.*", "");
         System.out.println(domainName);
         String path = "/home/rca/Documents/" + domainName;
         System.out.println(path);
