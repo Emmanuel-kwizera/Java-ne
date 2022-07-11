@@ -88,8 +88,8 @@ public class DownloadController {
         dto.setElapse_time(duration);
         dto.setKilobytes(size);
 
-        RestTemplate restTemplate=new RestTemplate();
-        restTemplate.postForObject("http://localhost:8500/api/websites",dto,CreateOrUpdateLinkDTO.class);
+//         RestTemplate restTemplate=new RestTemplate();
+//         restTemplate.postForObject("http://localhost:8500/api/websites",dto,CreateOrUpdateLinkDTO.class);
 
         
 //        Document doc = Jsoup.parse(pageWriterPath, "UTF-8", "http://example.com/");
