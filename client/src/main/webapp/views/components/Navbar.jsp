@@ -34,7 +34,7 @@
 </head>
 <body>
 <div class="navbar-container">
-    <h2>EMS</h2>
+    <h2>Kalpix LTD</h2>
     <h2 onclick="window.location.href='/logout'" class="logout-heading">LOGOUT</h2>
 </div>
 </body>
